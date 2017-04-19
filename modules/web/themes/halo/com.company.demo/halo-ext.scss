@@ -1,0 +1,17 @@
+/* Define your theme modifications inside next mixin */
+@mixin com_company_demo-halo-ext {
+  .my-float-options .v-radiobutton {
+    margin-top: 5px;
+    float: left;
+  }
+
+  .my-columns-options {
+    column-count: 2;
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+
+    .v-radiobutton > label {
+      white-space: nowrap;
+    }
+  }
+}

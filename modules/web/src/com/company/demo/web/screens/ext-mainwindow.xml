@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window xmlns="http://schemas.haulmont.com/cuba/window.xsd"
+        class="com.company.demo.web.screens.ExtAppMainWindow"
+        extends="/com/haulmont/cuba/web/app/mainwindow/mainwindow.xml"
+        messagesPack="com.company.demo.web.screens"
+        xmlns:main="http://schemas.haulmont.com/cuba/mainwindow.xsd">
+    <dialogMode height="600"
+                width="800"/>
+    <layout>
+        <split id="foldersSplit">
+            <main:workArea id="workArea">
+                <main:initialLayout expand="spacer">
+                    <label value="Important! OptionGroup must have width - relative or fixed" stylename="h1"/>
+
+                    <hbox spacing="true">
+                        <optionsGroup id="orderStatusesFloat"
+                                      caption="Floating Order statuses"
+                                      stylename="my-float-options"
+                                      width="200px"/>
+
+                        <optionsGroup id="orderStatusesColumns"
+                                      caption="Columns Order statuses"
+                                      stylename="my-columns-options"
+                                      width="200px"/>
+                    </hbox>
+
+                    <label id="spacer"/>
+                </main:initialLayout>
+            </main:workArea>
+        </split>
+    </layout>
+</window>
